@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="icon" type="image/png" href="./1582819.png">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@300;400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de Tarefas</title>
+</head>
+<body>
+
+    <div class="center">
+        <h1>Olá, quais são as tarefas de hoje?</h1>
+        <div class="tarefas">
+            <div class="conteudoTarefas">
+                <div class="textoTarefas">
+                    <span>Prova</span>
+                </div>
+                <div class="btExcluirTarefa">
+                    <button onclick="excluirTask(id)" class="btExcluir">x</button>
+                </div>
+            </div>
+       
+        </div>
+        <div class="addTask">
+            <input id="taskInput" type="text" placeholder="Tarefa">
+            <button onclick="addTask()">+</button>
+        </div>
+
+
+    </div> 
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.3.2/firebase-database.js"></script>
+    <script src="main.js"></script>
+</body>
+</html>
